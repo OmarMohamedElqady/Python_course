@@ -1,0 +1,68 @@
+# -----------------------------------
+# -- Date and Time => Introduction --
+# -----------------------------------
+
+import datetime
+  
+# Print The Current Date and Time
+print(datetime.datetime.now())
+
+# Print The Current Year
+print(datetime.datetime.now().year)
+
+# Print The Current day
+print(datetime.datetime.now().day)
+ 
+# Print The Current second
+print(datetime.datetime.now().second)
+
+# Print Start and End Of Date
+print(datetime.datetime.min)
+print(datetime.datetime.max)
+
+# Print The Current Time
+print(datetime.datetime.now().time())
+
+print(datetime.datetime.now().time().hour)
+print(datetime.datetime.now().time().minute)
+
+
+# Print The Current for this Time
+print(datetime.datetime(2021,10,1,22,))
+
+
+#print my birthday time
+my_BD=(datetime.datetime(2004,7,15,))
+print(my_BD)
+  
+print(f"date of my BD is {my_BD}",end=" ")
+print("hay")
+
+
+#print my age
+print(f"i lived for {dateNow - my_BD} ")
+print(f"i lived for {(dateNow - my_BD).days} days.")
+
+
+# ----------------------------------
+# -- Date and Time => Format Date --
+# ----------------------------------
+
+
+import datetime
+
+myBirthday = datetime.datetime(1982, 10, 25)                  
+
+print(myBirthday)                                  #  1982-10-25 00:00:00
+print(myBirthday.strftime("%a"))                   #Mon
+print(myBirthday.strftime("%A"))                   #Monday
+
+print(myBirthday.strftime("%b"))                   #Oct
+print(myBirthday.strftime("%B"))                   #October
+print(myBirthday.strftime("%d %B %Y"))             #25 October 1982
+print(myBirthday.strftime("%d, %B, %Y"))           #25, October, 1982
+print(myBirthday.strftime("%d/%B/%Y"))             #25/October/1982
+print(myBirthday.strftime("%d - %B - %Y"))         #25 - October - 1982
+print(myBirthday.strftime("%B - %Y"))              #October - 1982
+
+

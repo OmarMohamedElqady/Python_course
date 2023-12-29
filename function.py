@@ -29,6 +29,11 @@ say_hello("omar")
 say_hello("ali")
 say_hello("alaa")
 
+###Everything in Python is an object, which means we can pass functions.
+# Example
+Def twice(f, x):  
+    # apply f twice  
+    return f(f(x))
 
 
 
